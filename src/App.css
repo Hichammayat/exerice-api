@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user{
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 5%;
+  width: 200px;
+  height: 320px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.post{
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 5%;
+  width: 200px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  justify-content: space-between;
+  background-color: rgb(235, 227, 227);
+  margin: 20px 180px ;
+  width: 1000px;
+  padding: 10px 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.container-comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(235, 227, 227);
+  margin: 20px 180px ;
+  width: 1000px;
+  padding: 10px 50px;
+  
+}
+.top-card{
+  background-color: lightpink;
+  text-align: center;
+  border-radius: 5% 5% 0 0;
+  height: 100px;
+}
+.text-post{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.title-post{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+img{
+  width: 6em;
+  height: 6em;
+  background-color: lightpink;
+  border-radius: 50%;
+  border: solid 2px white;
+  position: relative;
+}
+h2,h4{
+  margin: 0;
+}
+button{
+  background-color: pink;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+}
+.comment{
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 5%;
+  width: 600px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 30px;
 }
